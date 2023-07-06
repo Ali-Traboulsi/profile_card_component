@@ -1,0 +1,151 @@
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-gray-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to avoid any element from stretching */ 
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+
+.container {
+    height: 100vh;
+    background: var(--dark-cyan);
+    position: relative;
+    color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-top{
+    position: absolute;
+    height: 978px;
+    width:978px;
+    background: url(images/bg-pattern-top.svg);
+    background-size: contain;
+    bottom: 50%;
+    right: 50%;
+}
+
+.bg-bottom{
+    position: absolute;
+    height: 978px;
+    width:978px;
+    background: url(images/bg-pattern-bottom.svg);
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+}
+
+/* utility classes */
+.dark_gray {
+    color: var(--dark-gray);
+}
+
+.dark_gray_blue {
+    color: var(--dark-gray-blue);
+}
+
+.card {
+    height: 376px;
+    width: 350px;
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 70px rgba(0,0,0,0.2);
+}
+
+.card__bg-img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: url(images/bg-pattern-card.svg);
+    z-index: -1;
+}
+
+
+.card__profile-info {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    /* flex-grow: 1; */
+}
+
+.card__flex_info_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__profile-img img{
+    border-radius: 50%;
+    border: 7px solid white;
+}
+
+.card__profile {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.card__profile_title {
+    padding-bottom: 7px;
+}
+
+.age {
+    color: var(--dark-gray);
+    padding-left: 7px;
+}
+
+.card__profile_location {
+    font-size: 15px;
+}
+
+.card__profile_stats {
+    display: flex;
+    justify-self: end;        /* Pack item from the end */
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid lightgray;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* *{border: 1px solid} */
+
+.card__stats_nb, 
+.card__stats_nb,
+.card__stats_nb {
+    padding-bottom: 8px;
+}
+
+.card__stats_text {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
